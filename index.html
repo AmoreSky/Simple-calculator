@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="height: 93VH; width: 98%; background:linear-gradient(#f00, yellow, green, blue, indigo,violet); box-shadow: 2px 2px 2px blue; padding: 10px; text-align: center;">
+            <H1>SIMPLE CALCULATOR</H1> 
+            <div id="result" style="border: 2px solid black; height: 50PX; width: 70%; margin-left: 150px; margin-top: 120PX; margin-right: 50px; background-color: white; font-size: xx-large;"></div> <br>
+            <input type="text" placeholder="FILL ME😊" id="FirstValue" style="width: 150px; height: 100PX; font-size: x-large;">
+            <input type="text" placeholder="FILL ME😊" id="secondValue" style="width: 150px; height: 100px;font-size: x-large;"> <br> <br>
+
+            <button onclick="multiply()" style="width: 80px; background-color: pink;"><b>Multiply</b></button>  
+            <button onclick="divide()" style="width: 80px; background-color: coral;"><b>Divide</b></button> <br> <br>
+            <button onclick="subtract()" style="width: 80px; background-color: lightgreen;"><b>Subtract</b></button>
+            <button onclick="add()" style="width: 80px; background-color: blueviolet;"><b>Add</b></button>
+
+            <script>
+          
+                function multiply() 
+                {
+                    // alert("I am working")
+                    var numberOne = document.getElementById("FirstValue").value;
+                    var numberTwo = document.getElementById("secondValue").value;
+                    // alert(numberOne * numberTwo);
+                    var total = numberOne*numberTwo;
+                    result.innerText = total;
+                }
+                function divide()
+                {
+                    // alert("I am working")
+                    var numberOne = document.getElementById("FirstValue").value;
+                    var numberTwo = document.getElementById("secondValue").value;
+                    // alert(numberOne/numberTwo)
+                    var total = numberOne/numberTwo;
+                    result.innerText = total;
+                }
+                function subtract() 
+                {
+                    var numberOne = document.getElementById("FirstValue").value;
+                    var numberTwo = document.getElementById("secondValue").value;
+                    // alert(numberOne-numberTwo)
+                    var total = numberOne-numberTwo;
+                    result.innerText = total;
+                }
+                function add()
+                {
+                    var numberOne = document.getElementById("FirstValue").value;
+                    var numberTwo = document.getElementById("secondValue").value;
+                    // alert(numberOne-numberTwo)
+                    var total = Number(numberOne) + Number(numberTwo);
+                    result.innerText = total;
+                }
+                
+             </script>
+        </div>
+    </body>
+</html>
