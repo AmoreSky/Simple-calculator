@@ -2,13 +2,13 @@
     h1{
         width: 180px;
         text-align: center !important;
-        margin-left: 60px;
+        margin-left: 20px;
         margin-top: 30px;
         color: darkgreen;
         font-family: Arial, Helvetica, sans-serif;
     }
     #result{
-        margin-left: 60px !important;
+        margin-left: 20px !important;
         margin-top: 60px !important;
     }
     input{
@@ -17,13 +17,13 @@
         font-size: large !important;
     }
     #FirstValue{
-        margin-left: -50px;
+        margin-left: -80px;
     }
     #first{
-        margin-left: -50px;
+        margin-left: -70px;
     }
     #second{
-        margin-left: -50px;
+        margin-left: -70px;
     }
     #div{
         background-size: cover !important;
