@@ -5,17 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="small.css">
+        <style>
+            button{
+                height: 50px;
+                margin-right: 10px;
+                border: none;
+                box-shadow: 2px 2px 2px rgb(250, 80, 80), -2px 2px 2px rgb(250, 80, 80), 2px -2px 2px rgb(250, 80, 80);
+            }
+        </style>
     </head>
     <body>
-        <div style="height: 93VH; width: 98%; background:linear-gradient(#f00, yellow, green, blue, indigo,violet); box-shadow: 2px 2px 2px blue; padding: 10px; text-align: center;">
-            <H1>SIMPLE CALCULATOR</H1> 
-            <div id="result" style="border: 2px solid black; height: 50PX; width: 70%; margin-left: 150px; margin-top: 120PX; margin-right: 50px; background-color: white; font-size: xx-large;"></div> <br>
+        <div id="div" style="height: 93VH; width: 98%; box-shadow: 2px 2px 2px blue; padding: 10px; text-align: center; background-image: url(./3324677.jpg); background-size: cover ;">
+            <h1 style="font-size: xx-large;">SIMPLE CALCULATOR</h1> 
+            <div id="result" style="border: 2px solid black; height: 50PX; width: 60%; margin-left: 220px; margin-top: 120PX; margin-right: 50px; background-color: white; font-size: xx-large;"></div> <br>
             <input type="text" placeholder="FILL ME😊" id="FirstValue" style="width: 150px; height: 100PX; font-size: x-large;">
             <input type="text" placeholder="FILL ME😊" id="secondValue" style="width: 150px; height: 100px;font-size: x-large;"> <br> <br>
 
-            <button onclick="multiply()" style="width: 80px; background-color: pink;"><b>Multiply</b></button>  
+            <button onclick="multiply()" style="width: 80px; background-color: pink;" id="first"><b>Multiply</b></button>  
             <button onclick="divide()" style="width: 80px; background-color: coral;"><b>Divide</b></button> <br> <br>
-            <button onclick="subtract()" style="width: 80px; background-color: lightgreen;"><b>Subtract</b></button>
+            <button id="second" onclick="subtract()" style="width: 80px; background-color: lightgreen;"><b>Subtract</b></button>
             <button onclick="add()" style="width: 80px; background-color: blueviolet;"><b>Add</b></button>
 
             <script>
